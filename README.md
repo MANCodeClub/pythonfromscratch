@@ -23,6 +23,8 @@ On apprend le python depuis le tout début.
 * classes
 * héritage / duck typing / interfaces
 * expressions régulières
+* modules et organisation du code
+* ne pas réinventer la roue carrée mais éviter les dépendances?!
 * API requests (appels http)
 * récurcivité
 * test et TDD
