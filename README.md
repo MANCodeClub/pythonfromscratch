@@ -2,12 +2,9 @@
 On apprend le python depuis le tout début.
 
 # programme
-**dit bonjour (print)**
-
-**pose une question affiche la réponse (input)**
-
-**pose une question teste la réponse (if)**
-
+* **dit bonjour (print)**
+* **pose une question affiche la réponse (input)**
+* **pose une question teste la réponse (if)**
 * pose une multiplication vérifie le résultat (random.randint() **int() f-string**)
 * pose la multiplication jusqu'à ce que le résultat soit bon (while)
 * pose N multiplications et compte le nombre d'erreur (for)
@@ -19,7 +16,6 @@ On apprend le python depuis le tout début.
 * ajoutez tout ce que vous voulez (fun + lire la documentation)
 
 # Trucs a voir un peu après
-
 * notion de complexité (O(n^x))
 * passage de paramètre par référence, valeur ou pointeur.
 * passer une fonction en paramètre d'une fonction (+ map(), reduce(), filter(), etc...)
