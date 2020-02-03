@@ -16,6 +16,7 @@ On apprend le python depuis le tout début.
 * ajoutez tout ce que vous voulez (fun + lire la documentation)
 
 # Trucs a voir un peu après
+* json pour les conf?
 * notion de complexité (O(n^x))
 * passage de paramètre par référence, valeur ou pointeur.
 * passer une fonction en paramètre d'une fonction (+ map(), reduce(), filter(), etc...)
