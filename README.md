@@ -8,20 +8,26 @@ On apprend le python depuis le tout début.
 
 **pose une question teste la réponse (if)**
 
-pose une multiplication vérifie le résultat (random.randint() **int() f-string**)
+* pose une multiplication vérifie le résultat (random.randint() **int() f-string**)
+* pose la multiplication jusqu'à ce que le résultat soit bon (while)
+* pose N multiplications et compte le nombre d'erreur (for)
+* mesure le temps passé (time.time())
+* sauvegarde le record (open() read() close() with?)
+* propose une autre partie (in)
+* sauvegarder le record personnel du joueur (split() dict)
+* gérer toutes les erreurs (exceptions)
+* ajoutez tout ce que vous voulez (fun + lire la documentation)
 
-pose la multiplication jusqu'à ce que le résultat soit bon (while)
+# Trucs a voir un peu après
 
-pose N multiplications et compte le nombre d'erreur (for)
-
-mesure le temps passé (time.time())
-
-sauvegarde le record (open() read() close() with?)
-
-propose une autre partie (in)
-
-sauvegarder le record personnel du joueur (split() dict)
-
-gérer toutes les erreurs (exceptions)
-
-ajoutez tout ce que vous voulez (fun + lire la documentation)
+* notion de complexité (O(n^x))
+* passage de paramètre par référence, valeur ou pointeur.
+* passer une fonction en paramètre d'une fonction (+ map(), reduce(), filter(), etc...)
+* encodage (latin, iso, windows, utf-8)
+* classes
+* héritage / duck typing / interfaces
+* expressions régulières
+* API requests (appels http)
+* récurcivité
+* test et TDD
+* ...
