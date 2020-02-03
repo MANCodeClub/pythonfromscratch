@@ -24,8 +24,14 @@ On apprend le python depuis le tout début.
 * héritage / duck typing / interfaces
 * expressions régulières
 * modules et organisation du code
-* ne pas réinventer la roue carrée mais éviter les dépendances?!
 * API requests (appels http)
 * récurcivité
-* test et TDD
+* test et TDD / mock?
+* persistance BDD: psycopg, orm?
+* docker
+* ne pas réinventer la roue carrée mais éviter les dépendances?!
+* virtual env
+* redis
+* exemple de pub/sub avec redis
 * ...
+* On passe au java?
