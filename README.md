@@ -36,3 +36,5 @@ On apprend le python depuis le tout début.
 * exemple de pub/sub avec redis
 * ...
 * On passe au java?
+
+[création de document libreOffice à partir de template](https://connect.ed-diamond.com/GNU-Linux-Magazine/GLMF-234/Generez-des-documents-LibreOffice-depuis-des-templates-grace-a-Python) GLMF n°234
