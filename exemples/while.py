@@ -20,3 +20,13 @@ while True:
     i += 1
     if i >= 5:
         break
+
+""" Ou bien comme ceci: """
+print("--- until V2---")
+i = 0
+termine = False
+while not termine:
+    print(i)
+    i += 1
+    if i >= 5:
+        termine = True
