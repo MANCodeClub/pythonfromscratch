@@ -5,7 +5,7 @@ On apprend le python depuis le tout début.
 * **dit bonjour (print)**
 * **pose une question affiche la réponse (input)**
 * **pose une question teste la réponse (if)**
-* pose une multiplication vérifie le résultat (random.randint() **int() f-string**)
+* pose une multiplication vérifie le résultat (**random.randint() int() f-string**)
 * pose la multiplication jusqu'à ce que le résultat soit bon (while)
 * pose N multiplications et compte le nombre d'erreur (for)
 * mesure le temps passé (time.time())
