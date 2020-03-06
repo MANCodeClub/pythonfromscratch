@@ -5,14 +5,14 @@ On apprend le python depuis le tout début.
 * **dit bonjour (print)**
 * **pose une question affiche la réponse (input)**
 * **pose une question teste la réponse (if)**
-* pose une multiplication vérifie le résultat (**random.randint() int() f-string**)
-* pose la multiplication jusqu'à ce que le résultat soit bon (while)
-* pose N multiplications et compte le nombre d'erreur (for)
-* mesure le temps passé (time.time())
-* sauvegarde le record (open() read() close() with?)
-* propose une autre partie (in)
+* **pose une multiplication vérifie le résultat (random.randint() int() f-string**)
+* **pose la multiplication jusqu'à ce que le résultat soit bon (while)**
+* **pose N multiplications et compte le nombre d'erreur (for)**
+* **mesure le temps passé (time.time())**
+* **sauvegarde le record (open() read() close() with?)**
+* **propose une autre partie (in)**
 * sauvegarder le record personnel du joueur (split() dict)
-* gérer toutes les erreurs (exceptions)
+* **gérer toutes les erreurs (exceptions)**
 * ajoutez tout ce que vous voulez (fun + lire la documentation)
 
 # Trucs a voir un peu après
@@ -25,15 +25,13 @@ On apprend le python depuis le tout début.
 * héritage / duck typing / interfaces
 * expressions régulières
 * modules et organisation du code
-* API requests (appels http)
+* **API requests (appels http)**
 * récurcivité
 * test et TDD / mock?
 * persistance BDD: psycopg, orm?
 * docker
 * ne pas réinventer la roue carrée mais éviter les dépendances?!
 * virtual env
-* redis
-* exemple de pub/sub avec redis
 * ...
 * On passe au java?
 
