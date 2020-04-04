@@ -11,7 +11,7 @@ Pour fêter le Brexit, le but est ici d'afficher un drapeau de la grande Bretagn
 | XXX XXX |
 
  Le drapeau est carré et fait ici 9 caractères de coté.
- C'est une étoile noire (faite avec des espaces) sur un fond de X.
+ C'est une étoile faite avec des espaces sur un fond de X.
 
  La taille T du "demi coté" du drapeau sera passée en paramètre à notre script de sorte que le coté du drapeau sera 2*T+1.
  Voici quelques exemples:
