@@ -1,0 +1,32 @@
+Carrottes:1
+ Navets
+savons de Marseille: 2
+patates : 2
+citrons: 3
+céréales : 3
+glace au chocolat : 3
+Savons de Marseille: 3
+oeufs: 4
+    citrons : 4
+
+carrottes: 4
+Carrottes: 5
+ Navets: 5
+
+savons de Marseille: 1
+patates : 1
+
+citrons: 1
+céréales : 1
+ glace au chocolat : 1
+Savons de Marseille: 7
+Oeufs: 7
+Carrottes: 7
+Navets : 7
+savons  de  Marseille: 7
+patates : 7
+CITRONS: 5
+céréales : 5
+glace au chocolat : 5
+Savons de Marseille: 5
+oeufs: 5
