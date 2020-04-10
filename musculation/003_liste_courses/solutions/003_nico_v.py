@@ -27,7 +27,11 @@ def dedoublonne(shopping_list):
     """ prend une liste de str en entrée et retourne une set des items normalisés """
     uniq_set = set() # j'avoue je ne vous en ai vraiment pas beaucoup parlé de celui là ;-) mais les sets ça sert à ça aussi.
     for line in shopping_list:
-        uniq_set.add(normalise(line))
+        item = normalise(line)
+        if item != "":
+            # l'utilisation d'un set ici est plus performant que de rechercher dans une liste (cf. dedoublonne_sans_set())
+            # on reparlera de la complexité plus tard (c'est l'étude du temps nécessaire à l'exécution d'un algo)
+            uniq_set.add(item)
     return uniq_set
 
 def dedoublonne_sans_set(shopping_list):
@@ -35,7 +39,7 @@ def dedoublonne_sans_set(shopping_list):
     clean_list = []
     for item in shopping_list:
         item = normalise(item)
-        if item not in clean_list:
+        if item != "" and item not in clean_list:
             clean_list.append(item)
     return clean_list
 
