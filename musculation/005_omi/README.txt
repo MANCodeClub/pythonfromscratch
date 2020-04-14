@@ -2,21 +2,21 @@ Les navire de commerces possèdent tous un numéro d'immatriculation internation
 Ce numéro respecte plusieurs règles:
 1- Il est constitué de 7 chiffres
 2- il ne commence pas par 0
-3- Le dernier chiffre doit être le chiffre des unité de la somme des six premiers multipliés par le position +1
+3- Le dernier chiffre doit être le chiffre des unité de la somme des six premiers multipliés par (8 - leur position)
 
 Zavez rien compris? On va faire un exemple:
 
 Par exemple:
-9876548
+9074729
 
 On fait le calcul avec les 6 premiers chiffres:
-9*2 + 8*3 + 7*4 + 6*5 + 5*6 + 4*7 = 158
+(9×7) + (0×6) + (7×5) + (4×4) + (7×3) + (2×2) = 139
 
-le résultat se termine par 8 donc le dernier chiffre du numéro doit être un 8
+le résultat se termine par 8 donc le dernier chiffre du numéro doit être un 9
 
 Second exemple:
 1111117
-1*2 + 1*3 + 1*4 + 1*5 + 1*6 + 1*7 = 27
+1*7 + 1*6 + 1*5 + 1*4 + 1*3 + 1*2 = 27
 Donc le dernier chiffre doit bien être un 7
 
 Nous devons écrire une fonction checkIMONbr(numero) qui va contrôler que notre numéro est correct.
