@@ -3,7 +3,9 @@ from solve import check_IMO_field
 
 test_cases = [
     (1111117, True),
+    (9074729, True), # exemple wikipedia
     (8622983, True), # le Belem
+    (9006253, True), # le Normandie (Ferry)
 #    (0111115, False), # interdit de commencer par un 0
     (111110, False), # doit faire 7 chiffres
     (11111117, False) # doit faire 7 chiffres
@@ -20,6 +22,8 @@ if nb_failure == 0:
 
 test_cases = [
     ("1111117", True),
+    ("9074729", True), # exemple wikipedia
+    ("8622983", True), # le Belem
     ("0111115", False), # interdit de commencer par un 0
     ("111110", False), # doit faire 7 chiffres
     ("", False), 

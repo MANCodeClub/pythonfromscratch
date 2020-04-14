@@ -26,9 +26,17 @@ def clef (liste) :
     clef = str(clef)
     #print (clef)
     #print (len(clef))
-    clef = clef[len(clef)-1:len(clef)]
+    clef = clef[len(clef)-1:len(clef)] 
     clef = int(clef)
     #print (clef)
+    """ NVI: Là ça a été dur on dirait ;-).
+    Tu veux retourner le chiffre des unités, c'est le reste de la division par 10
+    L'opérateur % (modulo) permet de retourner ce reste:
+    reste = valeur % diviseur
+    donc pour nous:
+    return clef % 10 aurait suffit
+    Comment ça j'aurais du le dire avant?!
+    """
     return clef
 
 def check_IMO_nbr(number) :
@@ -38,6 +46,17 @@ def check_IMO_nbr(number) :
     #print (chiffre)
         liste_chiffre.append(int(chiffre))
 
+    """ NVI il n'est pas utile de différencier les booléens premier_chiffre, longueur7 et clef_verif.
+    Si le test ne passe pas il suffit d'arrêter la fonction et de retourner False
+    if liste_chiffre[0] == 0 :
+        return False
+    if len(liste_chiffre) != 7 :
+        return False
+    if clef(liste_chiffre) != liste_chiffre[6]:
+        return False
+
+    On peut aussi tout regrouper dans le même test si ça reste lisible.
+    """
     if liste_chiffre[0] != 0 :
         premier_chiffre = True
     else :
