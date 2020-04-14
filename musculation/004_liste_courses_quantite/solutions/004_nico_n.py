@@ -19,8 +19,8 @@ for line in shopping_file:
         continue
     fields = line.split(":")
     item_name = normalise(fields[0])
-    item_number = int(fields[1]) # si ce n'est pas un entier ça plante (avec une exception). Ici je l'accepte...
-    shopping_dict[item_name] = shopping_dict.get(item_name, 0) + item_number # si l'item n'est pas déjà dans le dict on initialise sa valeur à 0
+    item_number = int(normalise(fields[1])) # si ce n'est pas un entier ça plante (avec une exception). Ici je l'accepte...
+    shopping_dict[item_name] = shopping_dict.get(item_name, 0) + item_number # si l'item n'est pas déjà dans le dict on utilise 0 par défaut
 
 
 
