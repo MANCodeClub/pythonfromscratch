@@ -10,6 +10,9 @@ OUT_FILE_PATH = f"{SCRIPT_DIR}/../liste_sans_doublons.txt"
 Cette habitude permet de tester plus facilement les fonctions dedoublonne et normalise comme on l'a fait dans l'exercice 001.
 On pourrait écrire un script de test qui valide ces deux fonctions sans avoir besoin de fichiers.
 Elle sont aussi réutilisables si au lieu d'utiliser des fichiers on a une requête http ou une base de donnée...
+
+On ne peut pas toujours faire cela. Si le fichier en entrée est vraiment énorme on ne va pas vouloir le charger entièrement en mémoire.
+Dans ce cas on le traitera ligne par ligne.
 """
 # acquisition des données
 shopping_file = open(IN_FILE_PATH,"r")
