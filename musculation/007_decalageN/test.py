@@ -7,7 +7,8 @@ test_cases = [
     ("ab", "ba", 1),
     ("abcde", "deabc", 2),
     ("abcde", "abcde", 0),
-    ("abcde", "eabcde", -1)
+    ("abcde", "eabcde", -1),
+    ("abba", "baba", -1)
 ]
 
 nb_failure = 0
