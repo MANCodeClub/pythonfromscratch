@@ -1,0 +1,57 @@
+﻿Identifiant,Résumé,Statut,Version ciblée,Version du produit
+0021839,"Mauvaise réception des messages T2k ""navires bannis""",commentaire,4.10,v3.0.0
+0052165,FERRY > POP  modifier annonce > changer de jour ou annuler je perds mes modif > l’annonce du départ disparait du POP graphique,commentaire,4.11,4.9.0
+0052023,Créer mouvement navire local > saisie poste-moyens + mvt prévu> enreg OK > retour = erreur exception technique,traité,4.9.1,4.8.2
+0050413,PROD > message NCA_72h envoyé à Trafic2000 après arrivée du navire !,traité,4.9.1,4.7.2
+0052534,Dossier Escale > Détention navire > date de fin détention dans le futur / pb affichage,traité,4.9.1,4.9.0
+0053097,EVOL FAL5 > ajouter 2 colonne personnalisées dans la FAL5 pour suivi équipage cadre COVID,nouveau,,4.8.3
+0049866,EVOL : pb lors MAJ ETA qui devient supérieure à la date ETD prévue,nouveau,4.11,
+0052761,Navires attendus > rechercher > période de fin non incluse,nouveau,2020,4.9.0
+0052593,FERRY POP > le trigramme de la fiche navire pas pris en compte dans Zoom et Imprimer POP,nouveau,2020,4.9.0
+0025537,Evol> Pouvoir rectifier erreur sur mouvement réalisé,nouveau,,v3.0.2
+0053000,EVOL : pouvoir faire des Déhalages dans le POP tant que navire pas sorti,nouveau,,4.8.3
+0052999,message DEPARTURE contient D/H appreillage > date jour car pas controle dans saisie Mvt sortie Ferry,nouveau,,4.8.3
+0051705,ISPS > PRE-REMPLIR > le code de l’installation du port provenance = 0000,nouveau,A FAIRE (hors klee),4.7.4
+0052518,Question ports : D/H arrivée prochain port pas connue,nouveau,,
+0045673,Ferry Ecran vigie > MAJ PAQ > graphiques POP et Occup quais pas mis à jour (pas de report sur le nouveau paq),nouveau,2020,4.4.0
+0046812,[Waste] Les déclaration ne comportant que le Summary (sans liste de déchets) sont refusée par T2k,nouveau,2020,4.4.2
+0052881,Utiliser l'id d'escale dans le CallShipId des messages T2k,nouveau,4.11,
+0052797,Demande confidentielle  est visible sur site visiteurs navires attendus (ne devrait pas),commentaire,,4.9.0
+0046760,[FAL ISPS] ajouter un contrôle sur le format de l'OMI compagnie qui devrait être un entier 0-9999999,chiffré,4.10,3.3.4
+0052524,DMS > Saisie des escales avec dates > enreg = OK > si on retourne sur la DMS = dates VIDEES,résolu,4.8.3,4.8.2
+0052535,Port de Calais > Navires disparus  depuis dernière maj base LLYOD,résolu,A FAIRE (hors klee),4.8.2
+0039066,[FIXME][Tableaux des demandes] EVOL : ajouter AFFICHER toutes les demandes nécessitant une action capitainerie,nouveau,4.11,3.3.4
+0051785,DS le controle lors de la maj de l'ETD tient compte de l'ETA mais pas de l'ATA.,résolu,4.8.2,4.8.1
+0051918,Demande Sortie > maj D/H départ prévue IMPOSSIBLE car fait référence à une date demande précédente bien que ANNULEE (déhalage),nouveau,,4.7.4
+0051823,PROD Caen > erreur technique Mouvemnt Sortie ferry ARMORIQUE 09/02/20 PB manque demande-decision capitainerie,résolu,,4.7.4
+0051723,FERRY POP vpm > on ne peut pas insérer d’annonces de Déhalage ni annuler des annonces si annonces à cheval jours différents,nouveau,,4.7.4
+0039083,[FIXME] EVOL : besoin de voir les navires au mouillage,nouveau,4.11,3.3.4
+0039065,[FIXME][Tableaux des mouvements] EVOL: ajouter AFFICHER tous les mouvements en attente d'une action capitainerie,nouveau,4.11,3.3.4
+0050088,ISPS ecran > Modifier = la taille de l’écran est agrandie partie droite tronquée,nouveau,2020,4.7.1
+0049994,Messages T2K ferries : ATAToPortOfCall vide dans les NCA_FAL5 et NCA_FAL6 même lorsque l'ATA est connu,nouveau,2020,4.7.1
+0029079,Donner la possiblité à la capitainerie de supprimer un navire local ou temporaire.,nouveau,2020,V3.1.3
+0048745,[T2k] certains navire non OMI doivent transmettre des messages à T2k [FIXME],nouveau,2021,3.3.4
+0048744,recherche de navire: permettre une recherche sur l'ensemble des référentiels.,nouveau,2021,4.6.1
+0025492,Evol >Ferry POP visiblité mouvements associés,nouveau,,v3.0.0
+0045153,[Poste et moyen] Ajouter une alerte lorsqu'on signale un niveau ISPS suppérieur à celui du quai demandé.,nouveau,2021,4.3.0
+0050742,ISPS > Pré-remplir : faut-il dupliquer également les activités de navire à navire ?,nouveau,,4.7.3
+0049654,[navires attendu][navire à quai] erreur technique sur certaines recherches impliquant la pagination,nouveau,2020,4.6.1
+0048746,le numéro d'immatriculation du navire n'apparait pas dans la description du navire du tableau de bord de la demande,nouveau,2021,4.6.1
+0046879,EVOL : savoir si le navire provient d’un port Hors Shengen (procédures d’entrée différentes),commentaire,,4.4.2
+0041614,"Dans l'écran FAL1 de sortie le champ ""Qté à bord"" n'est pas obligatoire pour certains types de navires => REGLE DOUTEUSE",nouveau,2020,3.6.0
+0042366,[référentiel] référentiel des locodes obsolète,nouveau,A FAIRE (hors klee),3.3.4
+0044712,"[Perf] requêtes Oracle trop ""gourmandes"" sur le journal des messages",nouveau,A FAIRE (hors klee),4.0.6
+0039873,STATS > demande Soes de faire cumul port en lourd et jauge brute pour l’ensemble des escales F1’ et F2’,nouveau,2020,3.3.4
+0026664,Message alerte sur disponibilité du PAQ : non conforme,à traiter,,V3.1.1
+0026563,Tableau des mouvements > affiche mauvais PAQ si annulation mvt ferrie par Ecran vigie,commentaire,,V3.1.1
+0039100,EVOL : pouvoir créer une  DAPAQ avec un navire TBN pas encore connu,nouveau,,3.3.4
+0040727,Question : Quand transmettre exactement les FAL5-6 à Trafic2000,nouveau,,3.5.1
+0023904,Pouvoir gérer par module Ferry les navires OMI à lignes régulières autres que type transbordeurs,commentaire,,V2.0.2 (Lot6c)
+0039081,Demande de Sortie > Avis Capitainerie « VPM » > ’écran avis>rubrique « déchets »> conserver ou pas champ Envoi message déchet dé,nouveau,,3.3.4
+0039064,Tableaux des escales : ajouter critères recherche « non consolidée »,nouveau,,3.3.4
+0037487,[MD] anno et évol liées à une meilleurs compréhension du formulaire MD,commentaire,,3.3.4
+0025541,Evol > Stats mettre une alerte pour saisir champ rotations si saisie cumulée,nouveau,,v3.0.2
+0025549,Calais: la société JP demande interfaçage de leur SI voyageurs avec Escaleport,commentaire,,v3.0.2
+0023849,Supprimer PAQ et des conséquences,commentaire,,V2.0.2 (Lot6c)
+0023902,Créer mouvement navire local > saisie annulée > mouvement quand même créé état MC en ne pouvant pas être annulé,commentaire,,V2.0.2 (Lot6c)
+0023903,Exports > Manque les champs personnalisés de la fiche navire,commentaire,,V2.1.3 (Lot6g)
