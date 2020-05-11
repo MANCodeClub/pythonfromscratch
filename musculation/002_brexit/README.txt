@@ -26,9 +26,9 @@ Pour fêter le Brexit, le but est ici d'afficher un drapeau de la grande Bretagn
 
 > python solve.py 2
 | X X |
+|X   X|
 |     |
-|     |
-|     |
+|X   X|
 | X X |
 
 > python solve.py 10
