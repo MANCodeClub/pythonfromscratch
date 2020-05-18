@@ -14,9 +14,9 @@ for i in range (i,len(articles)):               # pour passer en revue tous les 
         
         majusc = articles[i].upper()            # mettre les chaînes de caractères en majuscules 
         #print (majusc)
-        sans_esp=majusc.split()                 #suppression espaces multiples
-        #print(sans_esp)        
-        liste.append(sans_esp)
+        sansEsp=majusc.split()                 #suppression espaces multiples
+        #print(sansEsp)        
+        liste.append(sansEsp)
 #print(liste)
 
 liste2 = []
