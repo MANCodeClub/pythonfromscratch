@@ -1,0 +1,37 @@
+import os
+import fileinput
+
+
+chemin_list_init = 'xxxxxxxxxx' #path fichiers avec doublons
+chemin_list_fin = 'XXXXXXXXXXX' #path fichier sans doublons
+liste_int =list()
+
+
+with open(chemin_list_init, 'r',encoding='utf-8') as lecture_liste: #je lis le fichier, nettoie et alimente une liste
+    # Opérations sur le fichier
+    for line in lecture_liste:
+        if not line.isspace():  #suppression des lignes vides         
+            line_low = line.lower()
+            print (line_low)
+            #line_sans_esp = line_low.strip()
+            line_sans_esp = " ".join(line_low.split()) #pour supprimer les espaces sur une ligne (piqué à NV)
+            print (line_sans_esp)
+            liste_int.append(line_sans_esp) #liste avec format OK
+    
+           
+print(f'---------------------------LISTE int EST : \n {liste_int} \n -----------------------------------------------------------')
+
+#liste sans doublons
+liste_finale = []         
+for element in liste_int:
+    if element not in liste_finale:
+        liste_finale.append(element)
+
+print(f'---------------------------LISTE fin EST : \n {liste_finale} \n -----------------------------------------------------------')
+
+# enregistrement du résultat dans un fichier
+clean_shopping_file = open(chemin_list_fin ,"w", encoding ='utf-8')
+#for item in dedoublonne_sans_set(shopping_list) :
+for item in liste_finale :
+    clean_shopping_file.write(f"{item}\n")
+clean_shopping_file.close()
