@@ -41,22 +41,26 @@ def Verif(fichier):
     lecteur = csv.reader(siret_a_controler, delimiter="|", quotechar='"')
     next(lecteur)
     # on lit la première ligne avec le noms des colonnes pour la passer 
-    newrow=[[],[],[],[]]
+    dict_com_iput = {
+            'commune_info': []
+        }
+    n = 0
     for row in lecteur :
         #print (row)
-        newrow[0].append(row[0])
-        newrow[1].append(row[1])
-        newrow[2].append(row[2])
-        newrow[3].append(row[3])
-    for SIRET_Com in newrow[2] : # Pour chaque SIRET du fichier,
-        #SIRET=SIRET.strip()
+        dict_com_iput['commune_info'].append({'code_insee':row[0],'libelle_commune':row[1],'siret_communal':row[2],'siret_epci':row[3]})
+        n = n + 1
+    print (dict_com_iput)
+
+    for SIRET_Com in (dict_com_iput['commune_info']) : # Pour chaque SIRET du fichier,
+        #print (SIRET_Com)
+        print(SIRET_Com['siret_communal'])
         fichier_RESULTAT = open(f"{FILE_PATH}/fichier_RESULTAT.txt","a")
         date = datetime.datetime.today().strftime('%Y-%m-%d')
         authorization=(f"Bearer {access_token}")
         #print(f"Authorization = {authorization}")
         headers={"Authorization": authorization}
         #print(f"headers = {headers}")
-        url=(f"https://api.insee.fr/entreprises/sirene/V3/siret/{SIRET_Com}?date={date}") # je contruis l'URL correspondante avec en complément la date du jour
+        url=(f"https://api.insee.fr/entreprises/sirene/V3/siret/{SIRET_Com['siret_communal']}?date={date}") # je contruis l'URL correspondante avec en complément la date du jour
         #print (url)
         reponse = requests.get(url, headers=headers, proxies=proxies)
         #print (SIRET_Com)
@@ -70,12 +74,20 @@ def Verif(fichier):
             dateDebut = (reponse['etablissement']['periodesEtablissement'][0]['dateDebut'])
             dateFin = (reponse['etablissement']['periodesEtablissement'][0]['dateFin'])
             etablissment = (reponse['etablissement']['uniteLegale']['denominationUniteLegale'])
-            #print (reponse[])
-            fichier_RESULTAT.write(f"{SIRET_Com};") # j'écris le SIRET et le code erreur
+            enseigne1Etablissement = (reponse['etablissement']['periodesEtablissement'][0]['enseigne1Etablissement'])
+            etatAdministratifEtablissement = (reponse['etablissement']['periodesEtablissement'][0]['etatAdministratifEtablissement'])
+
+            print (reponse)
+            #fichier_RESULTAT.write(f"{SIRET_Com};") # j'écris le SIRET et le code erreur
+            fichier_RESULTAT.write(f"{SIRET_Com['code_insee']};") # j'écris le SIRET et le code erreur
+            fichier_RESULTAT.write(f"{SIRET_Com['libelle_commune']};") # j'écris le SIRET et le code erreur
+            fichier_RESULTAT.write(f"{SIRET_Com['siret_communal']};") # j'écris le SIRET et le code erreur
             fichier_RESULTAT.write(f"{status_code};") # j'écris le SIRET et le code erreur
             fichier_RESULTAT.write(f"{etablissment};") # j'écris le SIRET et le code erreur
             fichier_RESULTAT.write(f"{dateDebut};") # j'écris le SIRET et le code erreur
-            fichier_RESULTAT.write(f"{dateFin}\n") # j'écris le SIRET et le code erreur
+            fichier_RESULTAT.write(f"{dateFin};") # j'écris le SIRET et le code erreur
+            fichier_RESULTAT.write(f"{enseigne1Etablissement};") # j'écris le SIRET et le code erreur
+            fichier_RESULTAT.write(f"{etatAdministratifEtablissement}\n") # j'écris le SIRET et le code erreur
             fichier_RESULTAT.close()
         else :
             fichier_RESULTAT.write(f"{status_code}\n") # j'écris le SIRET et le code erreur
