@@ -44,11 +44,9 @@ def Verif(fichier):
     dict_com_iput = {
             'commune_info': []
         }
-    n = 0
     for row in lecteur :
         #print (row)
         dict_com_iput['commune_info'].append({'code_insee':row[0],'libelle_commune':row[1],'siret_communal':row[2],'siret_epci':row[3]})
-        n = n + 1
     print (dict_com_iput)
 
     for SIRET_Com in (dict_com_iput['commune_info']) : # Pour chaque SIRET du fichier,
@@ -77,7 +75,7 @@ def Verif(fichier):
             enseigne1Etablissement = (reponse['etablissement']['periodesEtablissement'][0]['enseigne1Etablissement'])
             etatAdministratifEtablissement = (reponse['etablissement']['periodesEtablissement'][0]['etatAdministratifEtablissement'])
 
-            print (reponse)
+            #print (reponse)
             #fichier_RESULTAT.write(f"{SIRET_Com};") # j'écris le SIRET et le code erreur
             fichier_RESULTAT.write(f"{SIRET_Com['code_insee']};") # j'écris le SIRET et le code erreur
             fichier_RESULTAT.write(f"{SIRET_Com['libelle_commune']};") # j'écris le SIRET et le code erreur
