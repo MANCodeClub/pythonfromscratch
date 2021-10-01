@@ -26,7 +26,7 @@ with open(chemin_list_init, 'r',encoding='utf-8') as lecture_liste:
             liste_intermediaire.append(line_sans_esp) #liste avec format OK
        
            
-print(f'---------------------------LISTE intermédiaire : \n {liste_intermediaire} \n -----------------------------------------------------------')
+#print(f'---------------------------LISTE intermédiaire : \n {liste_intermediaire} \n -----------------------------------------------------------')
         
 inventaire = {} #dico initié pour faire l'inventaire 
         
