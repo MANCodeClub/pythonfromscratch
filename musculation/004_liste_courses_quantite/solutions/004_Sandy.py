@@ -6,8 +6,8 @@ def ajoute(stock,legume,quantite):
     else:
         stock[legume] = quantite
 
-chemin_list_init = 'C:/Users/sandrine.holub/Documents/recup_git/pythonfromscratch/musculation/004_liste_courses_quantite/liste_avec_doublons_qtt.txt'
-chemin_list_fin = 'C:/Users/sandrine.holub/Documents/recup_git/pythonfromscratch/musculation/004_liste_courses_quantite/004_liste_courses_qtt_vf.txt'
+chemin_list_init = '{chemin_fichier origine}'
+chemin_list_fin = '{chemin fichier final}'
 
 
 liste_intermediaire = []
